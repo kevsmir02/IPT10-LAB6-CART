@@ -1,0 +1,8 @@
+Order Code: 93MAWKTR
+Date and Time Ordered: 2024-09-13 21:22:27
+Items:
+Product ID: 5
+Product Name: 25Kg Rice
+Price: 1200 PHP
+------------------------
+Total Price: 1200 PHP

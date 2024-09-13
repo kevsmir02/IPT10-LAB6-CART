@@ -1,0 +1,8 @@
+Order Code: MQEYIKDT
+Date and Time Ordered: 2024-09-13 21:22:21
+Items:
+Product ID: 1
+Product Name: 1Kg Sugar
+Price: 100 PHP
+------------------------
+Total Price: 100 PHP

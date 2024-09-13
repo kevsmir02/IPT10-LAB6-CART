@@ -2,13 +2,11 @@
 session_start();
 require "products.php";
 
-// Generate a random order code
 $order_code = generateOrderCode();
 $order_date = date("Y-m-d H:i:s");
 $cart = $_SESSION['cart'] ?? [];
 $total_price = 0;
 
-// Generate the order data
 $order_data = "Order Code: $order_code\n";
 $order_data .= "Date and Time Ordered: $order_date\n";
 $order_data .= "Items:\n";
@@ -23,10 +21,8 @@ foreach ($cart as $item) {
 
 $order_data .= "Total Price: $total_price PHP\n";
 
-// Save order to a text file (orders-[order_code].txt)
 file_put_contents("orders-$order_code.txt", $order_data);
 
-// Clear the cart after placing the order
 $_SESSION['cart'] = [];
 ?>
 <!DOCTYPE html>
@@ -46,7 +42,6 @@ $_SESSION['cart'] = [];
 </html>
 
 <?php
-// Function to generate a random order code
 function generateOrderCode($length = 8) {
     return substr(str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'), 0, $length);
 }

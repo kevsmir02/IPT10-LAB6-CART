@@ -2,7 +2,6 @@
 session_start();
 require "products.php";
 
-// Initialize the cart if it doesn't exist
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
 }
